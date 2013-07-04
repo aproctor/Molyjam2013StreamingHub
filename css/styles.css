@@ -1,0 +1,105 @@
+.safezone {
+	display: block;
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1280px;
+	height: 720px;
+	border: 1px solid red;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: #222;
+	font-size: .9em;
+}
+
+header {
+	display: block;
+	background: #282828;
+	width: 1240px;
+	padding: 20px;
+	height: 40px;
+}
+
+.container {padding: 0; margin: 0;}
+
+.molygreen {color: #51c844;}
+
+h1 {
+	font-family: 'Gotham Bold'; 
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	line-height: 40px;
+}
+
+#time {
+	color: #ccc;
+	float: right;
+	font-family: 'Avenir';
+	font-size: 1.5em;
+	height: 40px;
+	line-height: 40px;
+}
+
+#streamgrid {
+	display: block;
+	width: 1200px;
+	padding: 10px 40px;
+	text-align: center;
+}
+
+.vid-container {
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+	background: #282828;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.vid-container.hidden {display: none;}
+
+.caption {
+	color: #888; 
+	font-family: 'Avenir';
+	font-weight: 500;
+	position: absolute;
+	background: #282828;
+	display: block;
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	bottom: 4px;
+	left: 0;
+}
+
+.caption .molygreen {font-weight: 700;}
+
+#message {
+	display: block;
+	width: 1280px;
+	text-align: center;
+	z-index: 999;
+	
+}
+
+#message input {
+	background: #333;
+	color: #51c844;
+	border: #888;
+	width: 1220px;
+	height: 1.5em;
+	font-size: 1.5em;
+	padding: 10px;
+	line-height: 1.5em;
+	text-align: center;
+	font-family: 'Avenir';
+	border-radius: 0;
+	text-shadow: 0 2px 1px #222 ;
+}
