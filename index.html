@@ -10,6 +10,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="fonts/gotham.css" rel="stylesheet">
 
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -21,7 +22,10 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
     <link rel="shortcut icon" href="ico/favicon.png" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/vid_embed.js"></script>
   </head>
   <body>
     <div class="safezone"></div>
@@ -32,71 +36,12 @@
       </header>
 
       <div id="streamgrid">
-          <div class="vid-container">
-            <div class="vid-embed">
-              <object type="application/x-shockwave-flash" height="168" width="300" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=molyjamsf" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=molyjamsf&auto_play=true&start_volume=25" /></object>
-            </div>
-            <span class="caption">San Francisco, CA: <span class="molygreen">molyjamsf</span></span>
-          </div>
 
-          <div class="vid-container">
-            <div class="vid-embed">
-              <object type="application/x-shockwave-flash" height="168" width="300" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=molyjamla" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=molyjamla&auto_play=true&start_volume=25" /></object>
-            </div>
-            <span class="caption">Los Angeles, CA: <span class="molygreen">molyjamla</span></span>
-          </div>
 
-          <div class="vid-container">
-            <div class="vid-embed">
-              <object type="application/x-shockwave-flash" height="168" width="300" id="live_embed_player_flash" data="http://www.justin.tv/widgets/live_embed_player.swf?channel=molyjamto" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.justin.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.justin.tv&channel=molyjamto&auto_play=true&start_volume=25" /></object>
-            </div>
-            <span class="caption">Toronto, Canada: <span class="molygreen">molyjamto</span></span>
-          </div>
 
-          <div class="vid-container">
-            <div class="vid-embed">
-              <object type="application/x-shockwave-flash" height="168" width="300" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=molyjamdk" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=molyjamdk&auto_play=true&start_volume=25" /></object>
-            </div>
-            <span class="caption">Aalborg, Denmark: <span class="molygreen">molyjamdk</span></span>
-          </div>
-
-          <div class="vid-container">
-            <div class="vid-embed">
-              <object type="application/x-shockwave-flash" height="168" width="300" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=molyjamNL" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=molyjamNL&auto_play=true&start_volume=25" /></object>
-            </div>
-            <span class="caption">Utrecht, Netherlands: <span class="molygreen">molyjamNL</span></span>
-          </div>
-
-          <div class="vid-container">
-            <div class="vid-embed">
-              <object type="application/x-shockwave-flash" height="168" width="300" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=NHTIAGGP" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=NHTIAGGP&auto_play=true&start_volume=25" /></object>
-            </div>
-            <span class="caption">Concord, NH: <span class="molygreen">NHTIAGGP</span></span>
-          </div>
-
-          <div class="vid-container">
-            <div class="vid-embed">
-              <object type="application/x-shockwave-flash" height="168" width="300" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=MolyJamDurham" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=MolyJamDurham&auto_play=true&start_volume=25" /></object>
-            </div>
-            <span class="caption">Durham, USA: <span class="molygreen">MolyJamDurham</span></span>
-          </div>
-
-          <div class="vid-container">
-            <div class="vid-embed">
-              <object type="application/x-shockwave-flash" height="168" width="300" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=molyjamDuesseldorf" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=molyjamDuesseldorf&auto_play=true&start_volume=25" /></object>
-            </div>
-            <span class="caption">Düsseldorf, Germany: <span class="molygreen">molyjamDuesseldorf</span></span>
-          </div>
-
-          <div class="vid-container">
-            <div class="vid-embed">
-              <object type="application/x-shockwave-flash" height="168" width="300" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=molyjamDuesseldorf" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=molyjamDuesseldorf&auto_play=true&start_volume=25" /></object>
-            </div>
-            <span class="caption">Bayreuth, Germany: <span class="molygreen">MJBayreuth</span></span>
-          </div>
       </div>
 
-      <div id="message">
+      <div id="message" style="display: none;">
 
           <input type="text" spellcheck="false" placeholder="www.molyjam.com"/>
 
@@ -104,6 +49,14 @@
 
     </div> <!-- /container -->
 
-    <script language="JavaScript">dT('time');</script>
+    <script language="JavaScript">
+      dT('time');
+
+
+
+      embedVids();
+
+    </script>
+
   </body>
 </html>

@@ -50,16 +50,16 @@ h1 {
 #streamgrid {
 	display: block;
 	width: 1200px;
-	padding: 10px 40px;
+	padding: 3px 40px;
 	text-align: center;
 }
 
 .vid-container {
 	display: inline-block;
-	width: 300px;
+	width: 320px;
 	text-align: center;
 	background: #282828;
-	margin-bottom: 10px;
+	margin: 0 5px 10px;
 	position: relative;
 }
 
@@ -72,7 +72,7 @@ h1 {
 	position: absolute;
 	background: #282828;
 	display: block;
-	width: 300px;
+	width: 320px;
 	height: 30px;
 	line-height: 30px;
 	bottom: 4px;
