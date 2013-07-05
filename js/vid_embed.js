@@ -30,10 +30,6 @@ var embedVids = function() {
     feed: 'molyjamNL'
   },
   {
-    name: 'Concord, NH',
-    feed: 'NHTIAGGP'
-  },
-  {
     name: 'Durham, USA',
     feed: 'MolyJamDurham'
   },
@@ -44,10 +40,18 @@ var embedVids = function() {
   {
     name: 'Bayreuth, Germany',
     feed: 'MJBayreuth'
+  },
+  {
+    name: 'Rome, Italy',
+    feed: 'molyjamrome'
+  },
+  {
+    name: 'Concord, NH',
+    feed: 'NHTIAGGP'
   }];
 
   var buffer = []
-  for(var i = 0; i < hosts.length && i < 10; i++) {
+  for(var i = 0; i < hosts.length; i++) {
     var host = hosts[i];
     embedVid(width,height, host, buffer);
   }
