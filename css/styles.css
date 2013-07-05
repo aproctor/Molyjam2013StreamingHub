@@ -103,11 +103,3 @@ h1 {
 	border-radius: 0;
 	text-shadow: 0 2px 1px #222 ;
 }
-
-
-@font-face {
-  font-family: 'Gotham Bold';
-  font-style: normal;
-  font-weight: bold;
-  src: local('Gotham Bold'), local('Gotham-Bold'), url('/fonts/Gotham-Bold.ttf') format('truetype');
-}
