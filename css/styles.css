@@ -52,6 +52,7 @@ h1 {
 	width: 1200px;
 	padding: 3px 40px;
 	text-align: center;
+	padding-left: 111px;
 }
 
 .vid-container {
@@ -61,7 +62,13 @@ h1 {
 	background: #282828;
 	margin: 0 5px 10px;
 	position: relative;
+	float: left;
 }
+
+.vid-container.focused, .vid-container.focused .caption{
+	width: 640px;
+}
+
 
 .vid-container.hidden {display: none;}
 

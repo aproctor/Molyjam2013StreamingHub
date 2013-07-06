@@ -1,4 +1,12 @@
-var embedVids = function() {
+var getURLParameter = function(name) {
+    var match = RegExp(name + '=' + '(.+?)(&|$)').exec(location.search);
+    if(match && match.length > 1) {
+      return decodeURI(match[1]);
+    }
+    return null;
+};
+
+var embedVids = function(focus) {
   var $container = $('#streamgrid');
 
   var bw = 16;
@@ -61,23 +69,42 @@ var embedVids = function() {
     feed: 'molyjamkarlsruhe'
   }];
 
-  var buffer = []
-  for(var i = 0; i < hosts.length && i < 9; i++) {
+  var buffer = [];
+
+  var gridCount = 9;
+  if(focus) {
+    for(var i = 0; i < hosts.length && i < 9; i++) {
+      var host = hosts[i];
+      if(host.feed == focus) {
+        embedVid(width * 2, height *2, host, buffer, true);
+        break;
+      }
+    }
+    gridCount -= 3;
+  }
+
+  for(var i = 0; i < hosts.length && i < gridCount; i++) {
     var host = hosts[i];
-    embedVid(width,height, host, buffer);
+    if(host.feed != focus) {
+      embedVid(width,height, host, buffer);
+    }
   }
   $container.html(buffer.join(''));
   console.log(buffer.join(''));
 };
 
-var embedVid = function(width, height, host, buffer) {
+var embedVid = function(width, height, host, buffer, focused) {
 
   var service = "twitch";
   if(host.justin_tv_fg) {
     service = "justin";
   }
 
-  buffer.push('<div class="vid-container"><div class="vid-embed"><object type="application/x-shockwave-flash" height="');
+  buffer.push('<div class="vid-container');
+  if(focused) {
+    buffer.push(' focused');
+  }
+  buffer.push('"><div class="vid-embed"><object type="application/x-shockwave-flash" height="');
   buffer.push(height);
   buffer.push('" width="');
   buffer.push(width);
@@ -91,7 +118,13 @@ var embedVid = function(width, height, host, buffer) {
   buffer.push(service);
   buffer.push('.tv&channel=');
   buffer.push(host.feed);
-  buffer.push('&auto_play=true&start_volume=0" /></object></div><span class="caption">');
+  buffer.push('&auto_play=true&start_volume=');
+  if(focused) {
+    buffer.push(25);
+  } else {
+    buffer.push(0);
+  }
+  buffer.push('" /></object></div><span class="caption">');
   buffer.push(host.name);
   buffer.push(': <span class="molygreen">');
   buffer.push(host.feed);
