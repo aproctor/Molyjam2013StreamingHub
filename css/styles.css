@@ -93,16 +93,18 @@ h1 {
 	width: 1280px;
 	text-align: center;
 	z-index: 999;
-
+	top: -13px;
+	position: absolute;
 }
 
 #message input {
-	background: #333;
+	background: transparent;
 	color: #51c844;
 	border: #888;
 	width: 1220px;
 	height: 1.5em;
-	font-size: 1.5em;
+	font-size: 4em;
+	font-weight: bold;
 	padding: 10px;
 	line-height: 1.5em;
 	text-align: center;

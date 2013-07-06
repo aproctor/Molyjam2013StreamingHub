@@ -29,9 +29,9 @@
 
       </div>
 
-      <div id="message" style="display: none;">
+      <div id="message">
 
-          <input type="text" spellcheck="false" placeholder="www.molyjam.com"/>
+          <input type="text" spellcheck="false" />
 
       </div>
 
@@ -44,6 +44,12 @@
       //Seperate script block in case js file reference is broken
       dT('time');
       embedVids(getURLParameter('focus'));
+
+      //Set the caption
+      var caption = getURLParameter('caption');
+      if(caption && caption.trim().length > 0) {
+        $('#message input').val(caption.trim());
+      }
     </script>
   </body>
 </html>
