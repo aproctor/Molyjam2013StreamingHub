@@ -35,8 +35,8 @@ var embedVids = function() {
     feed: 'MolyJamDurham'
   },
   {
-    name: 'Düsseldorf, Germany',
-    feed: 'molyjamDuesseldorf'
+    name: 'Tel Aviv',
+    feed: 'molyjamTA'
   },
   {
     name: 'Bayreuth, Germany',
@@ -52,6 +52,13 @@ var embedVids = function() {
   },{
     name: 'Utrecht, Netherlands',
     feed: 'molyjamNL'
+  },
+  {
+    name: 'Düsseldorf, Germany',
+    feed: 'molyjamDuesseldorf'
+  }, {
+    name: 'Karlrushe',
+    feed: 'molyjamkarlsruhe'
   }];
 
   var buffer = []
