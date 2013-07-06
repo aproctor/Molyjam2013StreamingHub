@@ -26,8 +26,9 @@ var embedVids = function() {
     feed: 'molyjamdk'
   },
   {
-    name: 'Utrecht, Netherlands',
-    feed: 'molyjamNL'
+    name: 'Oakland, CA',
+    feed: 'oaklandmolyjam',
+    justin_tv_fg: true
   },
   {
     name: 'Durham, USA',
@@ -48,10 +49,13 @@ var embedVids = function() {
   {
     name: 'Concord, NH',
     feed: 'NHTIAGGP'
+  },{
+    name: 'Utrecht, Netherlands',
+    feed: 'molyjamNL'
   }];
 
   var buffer = []
-  for(var i = 0; i < hosts.length; i++) {
+  for(var i = 0; i < hosts.length && i < 9; i++) {
     var host = hosts[i];
     embedVid(width,height, host, buffer);
   }
