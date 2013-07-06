@@ -46,10 +46,17 @@
       embedVids(getURLParameter('focus'));
 
       //Set the caption
-      var caption = getURLParameter('caption');
-      if(caption && caption.trim().length > 0) {
-        $('#message input').val(caption.trim());
-      }
+      var $message = $('#message input');
+      $message.val('Reloading...');
+      window.setTimeout(function() {
+        var caption = getURLParameter('caption');
+        if(caption && caption.trim().length > 0) {
+          $message.val(caption.trim());
+        } else {
+          $message.val('');
+        }
+      }, 1000*3);
+
     </script>
   </body>
 </html>
