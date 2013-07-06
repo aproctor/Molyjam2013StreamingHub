@@ -34,17 +34,12 @@ var embedVids = function(focus) {
     feed: 'molyjamdk'
   },
   {
-    name: 'Oakland, CA',
-    feed: 'oaklandmolyjam',
-    justin_tv_fg: true
+    name: 'Glasgow, Scotland',
+    feed: 'molyjamglasgow'
   },
   {
     name: 'Durham, USA',
     feed: 'MolyJamDurham'
-  },
-  {
-    name: 'Tel Aviv',
-    feed: 'molyjamTA'
   },
   {
     name: 'Bayreuth, Germany',
@@ -53,21 +48,30 @@ var embedVids = function(focus) {
   {
     name: 'Rome, Italy',
     feed: 'molyjamrome'
-  },
-  {
-    name: 'Concord, NH',
-    feed: 'NHTIAGGP'
   },{
     name: 'Utrecht, Netherlands',
     feed: 'molyjamNL'
+  },{
+    name: 'Oakland, CA',
+    feed: 'oaklandmolyjam',
+    justin_tv_fg: true
+  }, {
+    name: 'Karlrushe',
+    feed: 'molyjamkarlsruhe'
   },
   {
     name: 'Düsseldorf, Germany',
     feed: 'molyjamDuesseldorf'
-  }, {
-    name: 'Karlrushe',
-    feed: 'molyjamkarlsruhe'
-  }];
+  },
+  {
+    name: 'Concord, NH',
+    feed: 'NHTIAGGP'
+  },
+  {
+    name: 'Tel Aviv',
+    feed: 'molyjamTA'
+  }
+  ];
 
   var buffer = [];
 
