@@ -37,8 +37,18 @@
 
     </div> <!-- /container -->
     <script language="JavaScript">
-      //Reload page every 30 minutes
-      window.setTimeout(function() { location.reload(); }, 1000*60*30);
+      var getURLParameter = function(name) {
+          var match = RegExp(name + '=' + '(.+?)(&|$)').exec(location.search);
+          if(match && match.length > 1) {
+            return decodeURI(match[1]);
+          }
+          return null;
+      };
+
+      if(getURLParameter('refresh') == "true") {
+        //Reload page every 30 minutes
+        window.setTimeout(function() { location.reload(); }, 1000*60*30);
+      }
     </script>
     <script language="JavaScript">
       //Seperate script block in case js file reference is broken

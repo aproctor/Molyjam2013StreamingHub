@@ -1,10 +1,4 @@
-var getURLParameter = function(name) {
-    var match = RegExp(name + '=' + '(.+?)(&|$)').exec(location.search);
-    if(match && match.length > 1) {
-      return decodeURI(match[1]);
-    }
-    return null;
-};
+
 
 var embedVids = function(focus) {
   var $container = $('#streamgrid');
