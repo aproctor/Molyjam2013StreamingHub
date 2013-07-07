@@ -25,8 +25,8 @@ var embedVids = function(focus) {
       name: 'Aalborg, Denmark',
       feed: 'molyjamdk'
   },{
-    name: 'Lisbon, Portugal',
-    feed: 'molyjamLisbon'
+    name: 'London, UK',
+    feed: 'molyjamlondon'
   },{
     name: 'Bayreuth, Germany',
     feed: 'MJBayreuth'
@@ -68,6 +68,9 @@ var embedVids = function(focus) {
   {
     name: 'Concord, NH',
     feed: 'NHTIAGGP'
+  },{
+    name: 'Lisbon, Portugal',
+    feed: 'molyjamLisbon'
   },
   {
     name: 'Tel Aviv',
