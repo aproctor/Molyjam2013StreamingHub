@@ -29,9 +29,6 @@ var embedVids = function(focus) {
     name: 'Los Angeles, CA',
     feed: 'molyjamla'
   },{
-    name: 'Düsseldorf, Germany',
-    feed: 'molyjamDuesseldorf'
-  },{
       name: 'Durham, NC',
       feed: 'MolyJamDurham'
   },{
@@ -47,6 +44,9 @@ var embedVids = function(focus) {
   },{
     name: 'Karlrushe',
     feed: 'molyjamkarlsruhe'
+  },{
+    name: 'Düsseldorf, Germany',
+    feed: 'molyjamDuesseldorf'
   },{
     name: 'London, UK',
     feed: 'molyjamlondon'
