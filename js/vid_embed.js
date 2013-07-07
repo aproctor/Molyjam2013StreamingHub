@@ -30,17 +30,14 @@ var embedVids = function(focus) {
     feed: 'molyjamla'
   },
   {
-      name: 'Oakland, CA',
-      feed: 'oaklandmolyjam',
-      justin_tv_fg: true
-    },
-  {
-    name: 'Glasgow, Scotland',
-    feed: 'molyjamglasgow'
-  },
-  {
-    name: 'Durham, USA',
-    feed: 'MolyJamDurham'
+      name: 'Las Vegas, NV',
+      feed: 'molyjamLV'
+  },{
+      name: 'Aalborg, Denmark',
+      feed: 'molyjamdk'
+  },{
+    name: 'Düsseldorf, Germany',
+    feed: 'molyjamDuesseldorf'
   },
   {
     name: 'Bayreuth, Germany',
@@ -54,17 +51,21 @@ var embedVids = function(focus) {
     feed: 'molyjamNL'
   },
   {
-      name: 'Aalborg, Denmark',
-      feed: 'molyjamdk'
-    }
-  , {
+    name: 'Glasgow, Scotland',
+    feed: 'molyjamglasgow'
+  },{
     name: 'Karlrushe',
     feed: 'molyjamkarlsruhe'
   },
   {
-    name: 'Düsseldorf, Germany',
-    feed: 'molyjamDuesseldorf'
+      name: 'Durham, USA',
+      feed: 'MolyJamDurham'
   },
+  {
+      name: 'Oakland, CA',
+      feed: 'oaklandmolyjam',
+      justin_tv_fg: true
+    },
   {
     name: 'Concord, NH',
     feed: 'NHTIAGGP'
