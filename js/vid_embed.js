@@ -25,9 +25,6 @@ var embedVids = function(focus) {
       name: 'Aalborg, Denmark',
       feed: 'molyjamdk'
   },{
-    name: 'London, UK',
-    feed: 'molyjamlondon'
-  },{
     name: 'Bayreuth, Germany',
     feed: 'MJBayreuth'
   },{
@@ -47,11 +44,14 @@ var embedVids = function(focus) {
     name: 'Los Angeles, CA',
     feed: 'molyjamla'
   },{
-      name: 'Las Vegas, NV',
-      feed: 'molyjamLV'
-  },{
     name: 'Düsseldorf, Germany',
     feed: 'molyjamDuesseldorf'
+  },{
+    name: 'London, UK',
+    feed: 'molyjamlondon'
+  },{
+      name: 'Las Vegas, NV',
+      feed: 'molyjamLV'
   },{
     name: 'Karlrushe',
     feed: 'molyjamkarlsruhe'
