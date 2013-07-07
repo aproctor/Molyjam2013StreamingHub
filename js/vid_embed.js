@@ -19,9 +19,6 @@ var embedVids = function(focus) {
     name: 'Bayreuth, Germany',
     feed: 'MJBayreuth'
   },{
-    name: 'Rome, Italy',
-    feed: 'molyjamrome'
-  },{
     name: 'Utrecht, Netherlands',
     feed: 'molyjamNL'
   },{
@@ -41,19 +38,21 @@ var embedVids = function(focus) {
     name: 'London, UK',
     feed: 'molyjamlondon'
   },{
+      name: 'Durham, NC',
+      feed: 'MolyJamDurham'
+  },{
       name: 'Las Vegas, NV',
       feed: 'molyjamLV'
   },{
     name: 'Karlrushe',
     feed: 'molyjamkarlsruhe'
-  },
-  {
-      name: 'Durham, USA',
-      feed: 'MolyJamDurham'
   },{
     name: 'Oakland, CA',
     feed: 'oaklandmolyjam',
     justin_tv_fg: true
+  },{
+    name: 'Rome, Italy',
+    feed: 'molyjamrome'
   },{
       name: 'Aalborg, Denmark',
       feed: 'molyjamdk'
