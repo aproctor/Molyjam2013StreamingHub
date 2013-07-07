@@ -16,9 +16,6 @@ var embedVids = function(focus) {
     name: 'Glasgow, Scotland',
     feed: 'molyjamglasgow'
   },{
-      name: 'Aalborg, Denmark',
-      feed: 'molyjamdk'
-  },{
     name: 'Bayreuth, Germany',
     feed: 'MJBayreuth'
   },{
@@ -53,13 +50,14 @@ var embedVids = function(focus) {
   {
       name: 'Durham, USA',
       feed: 'MolyJamDurham'
-  },
-  {
-      name: 'Oakland, CA',
-      feed: 'oaklandmolyjam',
-      justin_tv_fg: true
-    },
-  {
+  },{
+    name: 'Oakland, CA',
+    feed: 'oaklandmolyjam',
+    justin_tv_fg: true
+  },{
+      name: 'Aalborg, Denmark',
+      feed: 'molyjamdk'
+  },{
     name: 'Concord, NH',
     feed: 'NHTIAGGP'
   },{
