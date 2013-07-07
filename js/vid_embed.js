@@ -19,40 +19,39 @@ var embedVids = function(focus) {
   var width = bw * scale;
 
   var hosts = [{
-    name: 'San Francisco, CA',
-    feed: 'molyjamsf'
-  },{
-    name: 'Toronto',
-    feed: 'molyjamto',
-    justin_tv_fg: true
-  },{
-    name: 'Los Angeles, CA',
-    feed: 'molyjamla'
-  },
-  {
-      name: 'Las Vegas, NV',
-      feed: 'molyjamLV'
+    name: 'Glasgow, Scotland',
+    feed: 'molyjamglasgow'
   },{
       name: 'Aalborg, Denmark',
       feed: 'molyjamdk'
   },{
-    name: 'Düsseldorf, Germany',
-    feed: 'molyjamDuesseldorf'
-  },
-  {
+    name: 'Lisbon, Portugal',
+    feed: 'molyjamLisbon'
+  },{
     name: 'Bayreuth, Germany',
     feed: 'MJBayreuth'
-  },
-  {
+  },{
     name: 'Rome, Italy',
     feed: 'molyjamrome'
   },{
     name: 'Utrecht, Netherlands',
     feed: 'molyjamNL'
-  },
-  {
-    name: 'Glasgow, Scotland',
-    feed: 'molyjamglasgow'
+  },{
+    name: 'Toronto',
+    feed: 'molyjamto',
+    justin_tv_fg: true
+  },{
+    name: 'San Francisco, CA',
+    feed: 'molyjamsf'
+  },{
+    name: 'Los Angeles, CA',
+    feed: 'molyjamla'
+  },{
+      name: 'Las Vegas, NV',
+      feed: 'molyjamLV'
+  },{
+    name: 'Düsseldorf, Germany',
+    feed: 'molyjamDuesseldorf'
   },{
     name: 'Karlrushe',
     feed: 'molyjamkarlsruhe'
